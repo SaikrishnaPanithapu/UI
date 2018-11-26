@@ -1,0 +1,18 @@
+<div class="container-fluid">
+
+  <div class="row">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" *ngFor="let links of breadCrumbLinks">
+        <a [routerLink]="" (click)="onGoToPage2()">
+          {{links}}
+        </a>
+      </li>
+    </ol>
+  </div>
+  <div class="jumbotron">
+    <h1>Scool Management</h1>
+    <p>Welcome To Scool Management Application!!</p>
+    <p>Enjoy Your Day</p>
+
+  </div>
+</div>
