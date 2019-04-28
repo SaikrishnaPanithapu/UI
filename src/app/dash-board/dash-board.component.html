@@ -9,10 +9,37 @@
       </li>
     </ol>
   </div>
-  <div class="jumbotron">
+  <div class="jumbotron" *ngIf="false">
     <h1>Scool Management</h1>
     <p>Welcome To Scool Management Application!!</p>
     <p>Enjoy Your Day</p>
 
+  </div>
+  <div class="row">
+    <!-- <input type="text" [(ngModel)]="searchText" class="inputStyle" (ngModelChange)= "getGitHubUsers()"> -->
+    <button class="button button1" type="button" (click)="getGitHubUsers()">Get github users</button>
+
+  </div>
+  <div class="row" *ngIf="show">
+    <div class="showdata">
+      <div *ngFor="let i of data">
+        <div>
+          <span>User loginId : {{i.login}}</span>
+        </div>
+        <div>
+          <span> Url : <a class="anchor" (click)="ShowUserDetails(i)">{{i.url}}</a></span>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="shoeuserData" *ngIf="userdetailsShow">
+      <div>Node Id is {{node_id}}</div>
+      <div>GitHub Profile Picture </div>
+      <hr>
+      <div>
+        
+        <img [src]="avatar_url" alt="Image not found" width="300px" height="290px">
+      </div>
+    </div>
   </div>
 </div>

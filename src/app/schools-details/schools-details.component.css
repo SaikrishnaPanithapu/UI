@@ -1,14 +1,24 @@
 .wrapper {
     overflow-y: scroll;
-    height: 330px; 
+    height: 370px; 
 }
 .rowsHeight{
     line-height: 12px !important;
     cursor: pointer;
+    
+}
+.applyBackground{
+    background-color: #007bff;
+}
+
+.rowsHeader{
+    line-height: 12px !important;
 }
 .verticalLine{
     border-right:1px solid #000;
     padding-right: 7px;
     padding-left: 7px;
 }
-
+tbody tr:hover {
+    background: #007bff;
+  }

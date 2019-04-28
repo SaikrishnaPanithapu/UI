@@ -4,3 +4,17 @@
 li:hover{
     cursor: pointer;
    }
+
+
+.hidden{
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: #fff;
+    transition: 0.7s;
+}
+.hidden:hover{
+    font-size: 23px;
+    color: #ff2424;
+    /* text-transform: uppercase; */
+}

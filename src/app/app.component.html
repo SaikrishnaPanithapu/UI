@@ -1,21 +1,26 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="">
+  <!-- <a class="navbar-brand" href="">
     <img src="../assets/images/SM_BrandIcon.png" alt="Logo" style="width:40px;height: 40px;">
-  </a>
+  </a> -->
+  <div >
+    
+    <span class="hidden">Schools info</span>
+  </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav mr-auto">
 
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about" routerLinkActive="active">About Us</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="dash" routerLinkActive="active">DashBoard</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="infrastructure" routerLinkActive="active">Infrastructure</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Reports</a>
       </li>
     </ul>
     <ul class="navbar-nav">
@@ -33,7 +38,8 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="popover()" data-placement="bottom" data-html="true" data-toggle="popover" data-content='<a href="" (click)="getProfile()">Profile</a><hr><a href="">Logout</a>' >
+        <a class="nav-link" (click)="popover()" data-placement="bottom" data-html="true" data-toggle="popover"
+          data-content='<a href="" (click)="getProfile()">Profile</a><hr><a href="">Logout</a>'>
           <i class="fa fa-user-circle fa-lg iconColor" aria-hidden="true">
           </i> Sai Krishna
           <span> <i class="fa fa-sort-desc" aria-hidden="true"></i></span>

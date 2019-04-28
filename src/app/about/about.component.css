@@ -1,0 +1,35 @@
+body{
+    background-color: #f1f1f1
+}
+.social-Div{
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%,-50%)
+}
+.social-Div a{
+    cursor: pointer;
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    background: #212529;
+    color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size:18px; 
+    text-decoration: none;
+}
+.social-Div a:hover{
+    background-color: #ff2424;
+}
+.social-Div a:hover >i{
+    transform: scale(1.8) rotate(30deg);
+}
+.social-Div a i{
+    transition: 0.7s;
+}
