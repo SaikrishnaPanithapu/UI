@@ -185,11 +185,13 @@ export class SchoolsDetailsComponent implements OnInit {
     this.rowsPerPageEnd = 50;
   }
   showHundred(value) {
-    this.rowsPerPageStart = 51;
+    // this.rowsPerPageStart = 51;
+    this.rowsPerPageStart = 1;
     this.rowsPerPageEnd = 100;
   }
   showFiveHundred(value) {
-    this.rowsPerPageStart = 101;
+    // this.rowsPerPageStart = 101;
+    this.rowsPerPageStart = 1;
     this.rowsPerPageEnd = 500;
   }
   showAll(value) {

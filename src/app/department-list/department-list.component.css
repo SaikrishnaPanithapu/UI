@@ -1,0 +1,9 @@
+.items{
+    list-style-type: none;
+}
+.items > button{
+    border-radius: 9px;
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+}

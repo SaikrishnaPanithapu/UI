@@ -1,0 +1,10 @@
+
+
+<div>
+  <br>
+  <ul>
+    <li *ngFor="let item of departments" class="items">
+        <span>{{item.id}}</span><span>  .  </span><button appDepartmentList (click)="onClickName(item)">{{item.name}}</button>
+    </li>
+  </ul>
+</div>

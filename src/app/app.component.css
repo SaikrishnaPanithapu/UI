@@ -10,11 +10,20 @@ li:hover{
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 23px;
-    color: #fff;
+    color: #ff2424;
     transition: 0.7s;
 }
 .hidden:hover{
     font-size: 23px;
-    color: #ff2424;
+    color: #fff;
+    
     /* text-transform: uppercase; */
+}
+a.nav-link.active {
+    color: #ff2424 !important;
+    transition: 0.7s;
+}
+a.nav-link.active:hover {
+    color: #fff !important;
+    transition: 0.7s;
 }

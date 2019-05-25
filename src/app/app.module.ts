@@ -8,13 +8,15 @@ import {SchoolDetailsService} from './services/school-details.service'
 import { HttpClientModule} from '@angular/common/http';
 import { SearchItemPipe } from './pipes/search-item.pipe';
 import { SearchRegionPipe } from './pipes/search-region.pipe';
+import { DepartmentListDirective } from './department-list.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     SearchItemPipe,
-    SearchRegionPipe
+    SearchRegionPipe,
+    DepartmentListDirective
   ],
   imports: [
     BrowserModule,
